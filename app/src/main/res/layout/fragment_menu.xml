@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/theme_gradients_background"
+    android:orientation="vertical"
+    tools:context=".view.ui.fragments.MenuFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgsoft"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_unlee"
+                android:layout_width="110dp"
+                android:layout_height="120dp"
+                android:layout_alignParentEnd="true"
+
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintStart_toStartOf="parent"
+                app:shapeAppearanceOverlay="@style/leaf_corner_pointright"
+                app:strokeWidth="5dp" />
+
+            <TextView
+                android:id="@+id/txt_welcome"
+                android:layout_width="261dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toStartOf="@+id/img_unlee"
+                android:background="#B70061A6"
+                android:fontFamily="@font/merriweather_black"
+                android:gravity="center"
+                android:shadowColor="@color/white"
+                android:shadowDx="10"
+                android:shadowRadius="2"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="55sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txt_welcome"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="11dp"
+                android:layout_toStartOf="@+id/img_unlee"
+                android:fontFamily="@font/merriweather_light"
+                android:shadowColor="@color/white"
+                android:shadowDx="1"
+                android:shadowRadius="3"
+                android:text="@string/app_slogan"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragCine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0.5"
+                    android:layout_margin="10sp"
+                    app:cardCornerRadius="50sp"
+
+
+                    app:cardElevation="15sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#073F78"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/cinema"
+                            app:shapeAppearanceOverlay="@style/leaf_corner_pointleft" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:fontFamily="@font/merriweather_black"
+                            android:text="@string/cinema"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="18sp">
+
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragMusic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0.5"
+                    android:layout_margin="10sp"
+                    app:cardCornerRadius="50sp"
+
+
+                    app:cardElevation="15sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#4B8BA5"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:alpha="1"
+                            android:src="@drawable/music"
+                            app:shapeAppearanceOverlay="@style/leaf_corner_pointright" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:fontFamily="@font/merriweather_black"
+                            android:text="@string/music"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="18sp">
+
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragTeatro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0.5"
+                    android:layout_margin="10sp"
+                    app:cardCornerRadius="50sp"
+
+
+                    app:cardElevation="15sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#38A3D2"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/theatre"
+                            app:shapeAppearanceOverlay="@style/leaf_corner_pointleft" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:fontFamily="@font/merriweather_black"
+                            android:text="@string/teatro"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp">
+
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0.5"
+                    android:layout_margin="10sp"
+                    app:cardCornerRadius="50sp"
+
+
+                    app:cardElevation="15sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#285D86"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/food"
+                            app:shapeAppearanceOverlay="@style/leaf_corner_pointright" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:fontFamily="@font/merriweather_black"
+                            android:text="@string/gastronomy"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="18sp">
+
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragMuseum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0.5"
+                    android:layout_margin="10sp"
+                    app:cardCornerRadius="65sp"
+
+
+                    app:cardElevation="15sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#9BB2C2"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/museum"
+                            app:contentPaddingStart="5sp"
+                            app:shapeAppearanceOverlay="@style/leaf_corner_pointleft" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:fontFamily="@font/merriweather_black"
+                            android:text="@string/museos"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp">
+
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fragfav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="0.5"
+                    android:layout_margin="10sp"
+                    app:cardCornerRadius="55sp"
+
+
+                    app:cardElevation="15sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#3E506F"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/fave"
+                            app:shapeAppearanceOverlay="@style/rounded_big_corner" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merriweather_black"
+                            android:text="@string/Faves"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="18sp">
+
+                        </TextView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:theme="@style/AppTheme"
+        app:menu="@menu/navi" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
