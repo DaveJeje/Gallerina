@@ -1,11 +1,8 @@
-package com.example.unlee.view.ui.activities
+package com.example.gallerina.view.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
-import androidx.core.view.ViewCompat.setBackground
-import com.example.unlee.R
+import com.example.gallerina.R
 
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

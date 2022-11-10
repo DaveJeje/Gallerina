@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/theme_gradients_background"
-    tools:context=".view.ui.activities.forgotpass">
+    tools:context=".view.ui.activities.Forgotpass">
 
     <TextView
         android:id="@+id/input_pass"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/input_email"
+        android:id="@+id/recover_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="132dp"
@@ -46,7 +46,7 @@
         android:text="@string/recover_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_email" />
+        app:layout_constraintTop_toBottomOf="@+id/recover_email" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView"

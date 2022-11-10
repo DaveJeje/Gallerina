@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "532062576060",
+    "project_id": "gallerina-ed8b7",
+    "storage_bucket": "gallerina-ed8b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532062576060:android:2a951d4791e49058eb9fb9",
+        "android_client_info": {
+          "package_name": "com.example.gallerina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532062576060-sg4higs19a5ep8r912n6cqnolp1ho2lh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_YtVJrYpDm1VNnC1_ll1yh006iZN1Z_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532062576060-sg4higs19a5ep8r912n6cqnolp1ho2lh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

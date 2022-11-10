@@ -1,11 +1,11 @@
-package com.example.unlee.view.ui.activities
+package com.example.gallerina.view.ui.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.unlee.R
-import com.example.unlee.databinding.ActivityMainBinding
+import com.example.gallerina.R
+import com.example.gallerina.databinding.ActivityMainBinding
 
 class Lander:AppCompatActivity() {
     lateinit var binding: ActivityMainBinding

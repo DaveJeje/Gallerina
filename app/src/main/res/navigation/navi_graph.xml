@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/menuFragment"
-        android:name="com.example.unlee.view.ui.fragments.MenuFragment"
+        android:name="com.example.gallerina.view.ui.fragments.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" >
         <action
@@ -31,26 +31,26 @@
     </fragment>
     <fragment
         android:id="@+id/cinemaFragment"
-        android:name="com.example.unlee.view.ui.fragments.CinemaFragment"
+        android:name="com.example.gallerina.view.ui.fragments.CinemaFragment"
         android:label="CinemaFragment" />
     <fragment
         android:id="@+id/musicFragment"
-        android:name="com.example.unlee.view.ui.fragments.MusicFragment"
+        android:name="com.example.gallerina.view.ui.fragments.MusicFragment"
         android:label="MusicFragment" />
     <fragment
         android:id="@+id/expoFragment"
-        android:name="com.example.unlee.view.ui.fragments.ExpoFragment"
+        android:name="com.example.gallerina.view.ui.fragments.ExpoFragment"
         android:label="ExpoFragment" />
     <fragment
         android:id="@+id/faveFragment"
-        android:name="com.example.unlee.view.ui.fragments.FaveFragment"
+        android:name="com.example.gallerina.view.ui.fragments.FaveFragment"
         android:label="FaveFragment" />
     <fragment
         android:id="@+id/museumFragment"
-        android:name="com.example.unlee.view.ui.fragments.MuseumFragment"
+        android:name="com.example.gallerina.view.ui.fragments.MuseumFragment"
         android:label="MuseumFragment" />
     <fragment
         android:id="@+id/theaterFragment"
-        android:name="com.example.unlee.view.ui.fragments.TheaterFragment"
+        android:name="com.example.gallerina.view.ui.fragments.TheaterFragment"
         android:label="TheaterFragment" />
 </navigation>

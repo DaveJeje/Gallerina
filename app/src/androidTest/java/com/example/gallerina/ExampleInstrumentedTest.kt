@@ -1,4 +1,4 @@
-package com.example.unlee
+package com.example.gallerina
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

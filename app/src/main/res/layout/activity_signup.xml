@@ -61,7 +61,7 @@
         android:padding="25sp">
 
       <EditText
-          android:id="@+id/editTextTextPersonName"
+          android:id="@+id/signupName"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_gravity="center_horizontal"
@@ -83,7 +83,7 @@
           app:layout_constraintTop_toTopOf="parent" />
 
       <EditText
-          android:id="@+id/editTextTextPassword2"
+          android:id="@+id/signupPass"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_margin="10sp"
@@ -103,10 +103,10 @@
           app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+          app:layout_constraintTop_toBottomOf="@+id/signupMail" />
 
       <EditText
-          android:id="@+id/editTextTextEmailAddress2"
+          android:id="@+id/signupMail"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_gravity="center_horizontal"
@@ -126,7 +126,7 @@
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintHorizontal_bias="0.176"
           app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+          app:layout_constraintTop_toBottomOf="@+id/signupName" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
   </FrameLayout>

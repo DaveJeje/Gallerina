@@ -1,11 +1,11 @@
-package com.example.unlee.view.ui.fragments
+package com.example.gallerina.view.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.unlee.R
+import com.example.gallerina.R
 
 
 class FaveFragment : Fragment() {

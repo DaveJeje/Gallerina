@@ -1,12 +1,12 @@
-package com.example.unlee.view.ui.activities
+package com.example.gallerina.view.ui.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper.myLooper
-import com.example.unlee.R
-import com.example.unlee.databinding.ActivityMainBinding
+import com.example.gallerina.R
+import com.example.gallerina.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
