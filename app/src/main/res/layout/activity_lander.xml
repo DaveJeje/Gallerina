@@ -13,6 +13,7 @@
         android:layout_marginBottom="76dp"
         android:background="@drawable/round_btn"
         android:backgroundTint="@color/ic_launcher_background"
+        android:fontFamily="@font/librefranklin_medium"
         android:hint="@string/registrarse"
         android:text="@string/signUp"
         android:textSize="18sp"
@@ -27,11 +28,12 @@
         android:layout_marginBottom="76dp"
         android:background="@drawable/round_btn"
         android:backgroundTint="@color/blue_dark"
+        android:fontFamily="@font/librefranklin_medium"
         android:hint="@string/iniciar_sesi_n"
         android:text="@string/login_button"
         android:textColor="@color/white"
-        android:textSize="18sp"
 
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:shapeAppearanceOverlay="@style/round_button" />
@@ -44,6 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/gg" />
 
     <TextView

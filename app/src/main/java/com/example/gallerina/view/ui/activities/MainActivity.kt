@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             val intent=Intent(this, Lander::class.java)
             startActivity(intent)
             finish()
-        },4000)
+        },3000)
         }
 
 

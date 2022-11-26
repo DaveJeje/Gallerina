@@ -5,14 +5,23 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.IdRes
 import androidx.cardview.widget.CardView
+import androidx.navigation.NavController
+import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 import com.example.gallerina.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
+
 
 
 class MenuFragment : Fragment() {
+    lateinit var bottomNavigationView: BottomNavigationView
+
+
 
     override fun onCreateView(
+
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
@@ -23,7 +32,7 @@ class MenuFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val cardCinema=view.findViewById<CardView>(R.id.fragCine)
         cardCinema.setOnClickListener{
-            findNavController().navigate(R.id.action_menuFragment_to_cinemaFragment)
+            findNavControllerSafely(R.id.menuFragment)?.navigate(R.id.action_menuFragment_to_cinemaFragment)
         }
         val cardMusic=view.findViewById<CardView>(R.id.fragMusic)
         cardMusic.setOnClickListener{
@@ -42,10 +51,41 @@ class MenuFragment : Fragment() {
         cardExpo.setOnClickListener{
             findNavController().navigate(R.id.action_menuFragment_to_expoFragment)
         }
-        val cardMuseum=view.findViewById<CardView>(R.id.fragMuseum)
+        val cardMuseum=view.findViewById<CardView>(R.id.fragVenues)
         cardMuseum.setOnClickListener{
-            findNavController().navigate(R.id.action_menuFragment_to_museumFragment)
+            findNavController().navigate(R.id.action_menuFragment_to_venuesFragment)
+        }
+        bottomNavigationView=view.findViewById(R.id.bottom_navigation)
+        bottomNavigationView.setOnItemSelectedListener{item ->
+            when(item.itemId){
+                R.id.nav_home-> null
+
+                R.id.nav_fav-> findNavController().navigate(R.id.action_menuFragment_to_faveFragment)
+
+                R.id.nav_venue-> findNavController().navigate(R.id.action_menuFragment_to_venuesFragment)
+
+                //R.id.nav_settings-> replaceFragment()
+
+
+
+                else->{}
+
+            }
+
+
+            true
+
+    }
+
+    }
+
+    fun Fragment.findNavControllerSafely(id: Int): NavController? {
+        return if (findNavController().currentDestination?.id == id) {
+            findNavController()
+        } else {
+            null
         }
     }
+
 
     }

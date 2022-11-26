@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_light"
+    tools:context=".view.ui.fragments.VenuesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardmapGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:id="@+id/mapGoogle"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/butMuseoNal"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/librefranklin_medium"
+        android:text="@string/museoNalVenue"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardmapGoogle" />
+
+    <Button
+        android:id="@+id/butCinemateca"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/librefranklin_medium"
+        android:text="@string/cinematecaVenue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butMambo" />
+
+    <Button
+        android:id="@+id/butCasaEnsamble"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/blue_dark"
+        android:fontFamily="@font/librefranklin_medium"
+        android:text="@string/casaEnsambleVenue"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butMuseoNal" />
+
+    <Button
+        android:id="@+id/butLeon"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/librefranklin_medium"
+        android:text="@string/unalVenue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butTeatroColon" />
+
+    <Button
+        android:id="@+id/butMambo"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/blue_dark"
+        android:text="@string/mamboVenue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butLeon" />
+
+    <Button
+        android:id="@+id/butTeatroColon"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/blue_dark"
+        android:fontFamily="@font/librefranklin_medium"
+        android:text="@string/teatroColonVenue"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardmapGoogle" />
+
+    <Button
+        android:id="@+id/butBiblioTintal"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/librefranklin_medium"
+        android:text="@string/bibTintalVenue"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butCasaEnsamble" />
+
+    <Button
+        android:id="@+id/butBiblioVirgilio"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/blue_dark"
+        android:fontFamily="@font/librefranklin_medium"
+        android:text="@string/bibVirgilioVenue"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butBiblioTintal" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTintMode="multiply"
+        android:theme="@style/AppTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navi" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

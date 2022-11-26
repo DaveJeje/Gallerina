@@ -6,9 +6,9 @@
         android:icon="@drawable/ic_outline_home"
         android:title="@string/home"/>
     <item
-        android:id="@+id/nav_search"
+        android:id="@+id/nav_venue"
         android:enabled="true"
-        android:icon="@drawable/ic_outline_search"
+        android:icon="@drawable/ic_baseline_location"
         android:title="@string/search"/>
     <item
         android:id="@+id/nav_fav"

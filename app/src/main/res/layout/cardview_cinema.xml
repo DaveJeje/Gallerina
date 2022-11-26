@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_gastronomy"
+    style="@style/Widget.Material3.CardView.Elevated"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:clickable="true"
+    android:elevation="2dp"
+    android:focusable="true"
+    android:theme="@style/AppTheme"
+    app:cardCornerRadius="15dp"
+    app:contentPaddingLeft="2dp"
+    app:contentPaddingRight="5dp"
+    app:contentPaddingTop="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/tvTitleCinema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/librefranklin_medium"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgCinema"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tvTitleCinema"
+            android:foregroundGravity="center_vertical"
+            android:paddingStart="3dp"
+            android:paddingEnd="5dp"
+            app:shapeAppearanceOverlay="@style/leaf_corner_pointleft" />
+
+        <TextView
+            android:id="@+id/tvGenreCinema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitleCinema"
+            android:layout_toEndOf="@+id/imgCinema"
+            android:fontFamily="@font/librefranklin_light"
+            android:text="Genre"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvDescriptionCinema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGenreCinema"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/imgCinema"
+            android:fontFamily="@font/merriweather_bold"
+            android:text="Descripción"
+            android:textColor="@color/md_theme_dark_outlineVariant"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/FaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_marginEnd="-5dp"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/fav_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-16dp"
+
+                android:layout_marginEnd="-3dp"
+                android:text="Fave"
+                android:textAlignment="center"
+                android:textColor="@color/md_theme_dark_primaryContainer" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

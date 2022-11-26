@@ -11,28 +11,42 @@
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" >
         <action
-            android:id="@+id/action_menuFragment_to_faveFragment"
-            app:destination="@id/faveFragment" />
-        <action
-            android:id="@+id/action_menuFragment_to_cinemaFragment"
-            app:destination="@id/cinemaFragment" />
-        <action
             android:id="@+id/action_menuFragment_to_expoFragment"
             app:destination="@id/expoFragment" />
         <action
             android:id="@+id/action_menuFragment_to_theaterFragment"
             app:destination="@id/theaterFragment" />
         <action
-            android:id="@+id/action_menuFragment_to_museumFragment"
-            app:destination="@id/museumFragment" />
-        <action
             android:id="@+id/action_menuFragment_to_musicFragment"
             app:destination="@id/musicFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_venuesFragment"
+            app:destination="@id/venuesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_faveFragment"
+            app:destination="@id/faveFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_cinemaFragment"
+            app:destination="@id/cinemaFragment" />
     </fragment>
     <fragment
         android:id="@+id/cinemaFragment"
         android:name="com.example.gallerina.view.ui.fragments.CinemaFragment"
-        android:label="CinemaFragment" />
+        android:label="CinemaFragment"
+        tools:layout="@layout/fragment_cinema">
+        <action
+            android:id="@+id/action_cinemaFragment_to_detailsScreenFragment"
+            app:destination="@id/detailsScreenFragment" />
+        <action
+            android:id="@+id/action_cinemaFragment_to_faveFragment"
+            app:destination="@id/faveFragment" />
+        <action
+            android:id="@+id/action_cinemaFragment_to_venuesFragment"
+            app:destination="@id/venuesFragment" />
+        <action
+            android:id="@+id/action_cinemaFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
     <fragment
         android:id="@+id/musicFragment"
         android:name="com.example.gallerina.view.ui.fragments.MusicFragment"
@@ -44,13 +58,41 @@
     <fragment
         android:id="@+id/faveFragment"
         android:name="com.example.gallerina.view.ui.fragments.FaveFragment"
-        android:label="FaveFragment" />
+        android:label="FaveFragment"
+        tools:layout="@layout/fragment_fave">
+        <action
+            android:id="@+id/action_faveFragment_to_detailsScreenFragment"
+            app:destination="@id/detailsScreenFragment" />
+        <action
+            android:id="@+id/action_faveFragment_to_venuesFragment"
+            app:destination="@id/venuesFragment"
+            tools:layout="@layout/fragment_venues"/>
+        <action
+            android:id="@+id/action_faveFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/museumFragment"
-        android:name="com.example.gallerina.view.ui.fragments.MuseumFragment"
-        android:label="MuseumFragment" />
+        android:id="@+id/venuesFragment"
+        android:name="com.example.gallerina.view.ui.fragments.VenuesFragment"
+        android:label="VenuesFragment"
+        tools:layout="@layout/fragment_venues">
+        <action
+            android:id="@+id/action_venuesFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_venuesFragment_to_cinemaFragment2"
+            app:destination="@id/cinemaFragment" />
+        <action
+            android:id="@+id/action_venuesFragment_to_faveFragment"
+            app:destination="@id/faveFragment" />
+    </fragment>
     <fragment
         android:id="@+id/theaterFragment"
         android:name="com.example.gallerina.view.ui.fragments.TheaterFragment"
         android:label="TheaterFragment" />
+    <dialog
+        android:id="@+id/detailsScreenFragment"
+        android:name="com.example.gallerina.view.ui.fragments.DetailsScreenFragment"
+        android:label="fragment_details_screen"
+        tools:layout="@layout/fragment_details_screen" />
 </navigation>
