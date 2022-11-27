@@ -37,12 +37,7 @@ class Home : AppCompatActivity() {
 
 
 
-fun replaceFragment (fragment: Fragment) {
-    val fragmentManager = supportFragmentManager
-    val fragmentTransaction = fragmentManager.beginTransaction()
-    fragmentTransaction.replace(R.id.homelayout, fragment)
-    fragmentTransaction.commit()
-}
+
 }
 
 

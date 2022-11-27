@@ -21,7 +21,7 @@ class Signup:AppCompatActivity() {
     lateinit var name:EditText
     lateinit var email:EditText
 
-    lateinit var database: FirebaseDatabase
+
     lateinit var dbReference: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,8 +29,7 @@ class Signup:AppCompatActivity() {
         setContentView(R.layout.activity_signup)
 
         firebaseAuth = Firebase.auth
-        database= FirebaseDatabase.getInstance()
-        dbReference=database.reference.child("Usuario")
+        dbReference=Firebase.database.reference.child("User")
         name = findViewById<EditText>(R.id.signupName)
         email = findViewById<EditText>(R.id.signupMail)
         val pass = findViewById<EditText>(R.id.signupPass)

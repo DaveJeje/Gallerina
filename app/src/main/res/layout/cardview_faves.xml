@@ -24,12 +24,25 @@
         android:paddingEnd="3dp"
         android:paddingBottom="4dp">
 
+        <Button
+            android:id="@+id/noLongerfaveButton"
+            style="@style/faveButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/ic_outline_fav"
+            android:backgroundTint="#FF0000"
+            android:textAllCaps="false"
+            app:strokeColor="#FF0000"
+            tools:ignore="SpeakableTextPresentCheck" />
+
         <TextView
             android:id="@+id/tvTitleCinema"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="9dp"
+            android:layout_toEndOf="@+id/noLongerfaveButton"
             android:fontFamily="@font/librefranklin_medium"
             android:text="Title"
             android:textColor="@color/black"
@@ -61,9 +74,10 @@
             android:id="@+id/tvDateCinema"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@id/tvVenue"
-            android:layout_marginStart="9dp"
-            android:layout_toEndOf="@+id/tvGenreCinema"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
             android:fontFamily="@font/librefranklin_light"
             android:gravity="bottom"
             android:text="Date"
@@ -76,8 +90,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@id/tvVenue"
-            android:layout_marginStart="9dp"
-            android:layout_toEndOf="@+id/tvDateCinema"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/tvGenreCinema"
             android:fontFamily="@font/librefranklin_light"
             android:gravity="bottom"
             android:text="Price"
@@ -94,7 +108,7 @@
             android:layout_marginTop="0dp"
             android:layout_toEndOf="@id/imgCinema"
             android:fontFamily="@font/librefranklin_light"
-            android:text="Descripción"
+            android:text="Venue"
             android:textColor="@color/md_theme_dark_outlineVariant"
             android:textSize="13sp" />
 
@@ -110,30 +124,6 @@
             android:text="Descripción"
             android:textColor="@color/md_theme_dark_outlineVariant"
             android:textSize="13sp" />
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="0dp"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/FaveButton"
-                style="@style/faveButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-5dp"
-                android:layout_marginEnd="-5dp"
-                android:background="@drawable/ic_baseline_favorite_24"
-                android:backgroundTint="#FF0000"
-                android:textAllCaps="false"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-
-        </LinearLayout>
 
     </RelativeLayout>
 

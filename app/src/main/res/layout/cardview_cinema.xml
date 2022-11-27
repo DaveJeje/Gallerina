@@ -69,37 +69,6 @@
             android:textColor="@color/md_theme_dark_outlineVariant"
             android:textSize="13sp" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="0dp"
-            android:orientation="vertical">
-
-            <CheckBox
-                android:id="@+id/FaveButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-5dp"
-                android:layout_marginEnd="-5dp"
-                android:textAllCaps="false" />
-
-            <TextView
-                android:id="@+id/fav_checkbox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="-16dp"
-
-                android:layout_marginEnd="-3dp"
-                android:text="Fave"
-                android:textAlignment="center"
-                android:textColor="@color/md_theme_dark_primaryContainer" />
-
-        </LinearLayout>
-
     </RelativeLayout>
 
 </com.google.android.material.card.MaterialCardView>

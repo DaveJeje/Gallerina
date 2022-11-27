@@ -12,7 +12,8 @@ import com.example.gallerina.model.Cinema
 import com.squareup.picasso.Picasso
 
 
-class CinemaAdapter(val context: Context, var clickListener: OnMovieItemClickListener):RecyclerView.Adapter<CinemaAdapter.ViewHolder>() {
+class CinemaAdapter(val context: Context, var clickListener: OnMovieItemClickListener):
+    RecyclerView.Adapter<CinemaAdapter.ViewHolder>() {
     var cinemaList= mutableListOf<Cinema>()
     fun setListData(data:MutableList<Cinema>){
         cinemaList=data
@@ -21,7 +22,8 @@ class CinemaAdapter(val context: Context, var clickListener: OnMovieItemClickLis
 
 
     override fun onCreateViewHolder(ViewGroup: ViewGroup, position: Int): ViewHolder {
-        val v=LayoutInflater.from(ViewGroup.context).inflate(R.layout.cardview_cinema,
+        val v=LayoutInflater.from(ViewGroup.context).inflate(
+            R.layout.cardview_cinema,
         ViewGroup,false)
         return ViewHolder(v)
 

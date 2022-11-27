@@ -76,7 +76,7 @@ class DetailsScreenFragment : DialogFragment(), OnMovieItemClickListener {
             "venue" to venue,
             "date" to date,
             "price" to price,
-            "url" to url)
+            "imgurl" to url)
         database.collection("Faves")
             .document(title.toString())
             .set(data)
